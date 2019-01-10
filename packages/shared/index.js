@@ -1,0 +1,1 @@
+export default 'Oi eu sou wallace'
