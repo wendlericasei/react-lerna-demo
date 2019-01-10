@@ -3,5 +3,9 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.8.4"
+  },
+  "scripts": {
+    "start:web": "cd packages/web && yarn start",
+    "start:mobile": "cd packages/mobile && yarn start"
   }
 }
