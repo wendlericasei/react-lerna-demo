@@ -1,23 +1,21 @@
 import React, { Component } from 'react'
 import List from '../../components/List'
-import { getStarships } from 'shared/Starships'
+import { getVideos } from 'shared/Videos'
 
 class Home extends Component {
   state = {
-    starships: []
+    videos: []
   }
 
   componentDidMount() {
-    getStarships().then(res => {
-      this.setState({ starships: res })
-    })
+    getVideos().then(videos => this.setState({ videos }))
   }
 
   render() {
-    const { starships } = this.state
+    const { videos } = this.state
 
     return (
-      <List collection={starships} />
+      <List collection={videos} />
     )
   }
 }
