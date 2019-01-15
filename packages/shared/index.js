@@ -1,1 +1,0 @@
-export default 'Oi eu sou Wendler'
