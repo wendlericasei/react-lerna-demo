@@ -8,7 +8,8 @@ export const getVideos = () => {
     params: {
       part: 'snippet',
       type: 'video',
-      key: API_KEY
+      key: API_KEY,
+      maxResults: 15
     }
   }).then(res => {  
     return res.data.items

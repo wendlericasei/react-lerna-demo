@@ -1,13 +1,14 @@
-import React, { Component, Fragment } from 'react'
-import List from '../../components/List'
-import { getVideos } from 'shared/Videos'
+import React, { Component } from 'react'
 
+//Material-ui components
 import { AppBar, Toolbar, IconButton, Typography, InputBase, withStyles } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 
-import homeStyle from './Home.style'
+import List from '../../components/List'
 
+import { getVideos } from 'shared/Videos'
+import homeStyle from './Home.style'
 class Home extends Component {
   state = {
     videos: []
@@ -22,7 +23,7 @@ class Home extends Component {
     const { classes } = this.props
 
     return (
-      <Fragment>
+      <section className={classes.root}>
         <AppBar position="static">
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer">
@@ -49,8 +50,9 @@ class Home extends Component {
             </div>
           </Toolbar>
         </AppBar>
+        
         <List collection={videos} />
-      </Fragment>
+      </section>
     )
   }
 }
