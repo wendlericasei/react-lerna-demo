@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { View, StyleSheet } from 'react-native'
 
+import { Appbar } from 'react-native-paper';
+
 import List from '../../components/list/List';
 import { getVideos } from 'shared/Videos'
 
@@ -18,6 +20,13 @@ export default class Home extends Component {
 
     return (
       <View style={styles.container}>
+        <Appbar.Header>
+          <Appbar.BackAction/>
+          <Appbar.Content title="Youtube list video"/>
+          <Appbar.Action icon="search"/>
+          <Appbar.Action icon="more-vert"/>
+        </Appbar.Header>
+
         <List collection={videos} />
       </View>
     )
