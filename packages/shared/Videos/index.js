@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const URL_API = 'https://www.googleapis.com/youtube/v3'
-const API_KEY = 'AIzaSyCsPZSC9OQCJZcslJBC4wduEyDnQioU6s4'
+const API_KEY = 'AIzaSyCgOxBBXkqvac1aocaWSQJnBaslmxSYg8A'
 
 export const getVideos = () => {
   return axios.get (`${URL_API}/search`, {
