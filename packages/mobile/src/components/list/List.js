@@ -4,7 +4,7 @@ import { FlatList } from 'react-native'
 import { Button, Card, Title, Paragraph } from 'react-native-paper';
 
 export default List = ({ collection }) => (
-  <FlatList data={collection} renderItem={({ item }) => (
+  <FlatList data={collection} keyExtractor={(item, index) => item.snippet.title} renderItem={({ item }) => (
     <Card style={{ marginBottom: 16 }}>
       <Card.Cover source={{ uri: item.snippet.thumbnails.high.url }} />
       <Card.Content>
