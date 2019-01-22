@@ -6,6 +6,8 @@ import { Appbar } from 'react-native-paper';
 import List from '../../components/list/List';
 import { getVideos } from 'shared/Videos'
 
+import { VictoryPie } from 'victory-native'
+
 export default class Home extends Component {
   state = {
     videos: []
@@ -26,6 +28,8 @@ export default class Home extends Component {
           <Appbar.Action icon="search"/>
           <Appbar.Action icon="more-vert"/>
         </Appbar.Header>
+
+        <VictoryPie innerRadius={100}/>
 
         <List collection={videos} />
       </View>
