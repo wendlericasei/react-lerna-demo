@@ -9,8 +9,11 @@
     "@material-ui/icons": "^3.0.2",
     "axios": "0.18.0",
     "chart.js": "^1.1.1",
+    "get-dev-paths": "^0.1.1",
     "react-chartjs": "^1.2.0",
     "react-native-paper": "^2.4.0",
+    "react-native-svg": "^9.0.3",
+    "react-native-vector-icons": "^6.2.0",
     "victory-native": "^31.0.0"
   }
 }
