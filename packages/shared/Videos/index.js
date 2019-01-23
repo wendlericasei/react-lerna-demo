@@ -15,3 +15,5 @@ export const getVideos = () => {
     return res.data.items
   })
 }
+
+export const sharedText = 'TEXT FROM SHARED'

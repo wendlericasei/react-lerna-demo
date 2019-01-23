@@ -6,6 +6,8 @@
   },
   "scripts": {
     "start:web": "cd packages/web && yarn start",
-    "start:mobile": "cd packages/mobile && yarn start"
+    "start:mobile": "cd packages/mobile && react-native run-android && react-native run-ios",
+    "start:ios": "cd packages/mobile && react-native run-ios",
+    "start:android": "cd packages/mobile && react-native run-android"
   }
 }
